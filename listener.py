@@ -14,6 +14,6 @@ while True:
     client.send(b"Addio.\n")
     client.close()
     file = open("solved.txt", "r+")
-    file.write(file.read() + recv_string + "\n")
+    file.write(recv_string + "\n")
     file.close()
 

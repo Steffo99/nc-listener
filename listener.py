@@ -13,7 +13,7 @@ while True:
     recv_string = str(recv_bytes)
     client.send(b"Addio.\n")
     client.close()
-    file = open("solved.txt", "r+")
+    file = open("solved.txt", "a+")
     file.write(recv_string + "\n")
     file.close()
 
